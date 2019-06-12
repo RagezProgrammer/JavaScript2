@@ -1,0 +1,54 @@
+<html>
+<head></head>
+<body>
+<script language="JavaScript">
+
+
+var tab=new Array(3);
+var suma=0;
+var max;
+var m;
+var avg;
+
+for(var i=0; i<tab.length; i++)
+{
+  tab[i]=prompt("Podaj liczbę");
+  suma=((suma/1)+(tab[i]/1));
+  max=(tab[0]/1);
+
+  if((tab[i]/1)>max)
+  {
+    max=tab[i]/1;
+  }
+  avg=((suma/1)/3);
+}
+
+
+
+
+for(var i=0; i<tab.length; i++)
+{
+  for(var j=0; j<tab.length; j++)
+  {
+    if(tab[i]>tab[j])
+    {
+      var x=tab[j];
+      tab[j]=tab[i];
+      tab[i]=x;
+    }
+  }
+}
+
+m=tab[1];
+
+document.write("Suma liczb:"+suma+"<br />");
+document.write("Największa z liczb:"+max+"<br />");
+document.write("Mediana:"+m+"<br />");
+document.write("Średnia:"+avg+"<br />");
+
+
+
+</script>
+
+</body>
+</html>

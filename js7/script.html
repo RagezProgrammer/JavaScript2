@@ -1,0 +1,51 @@
+<html>
+<head>
+<script language="JavaScript">
+
+var a=prompt("Podaj współczynnik a w twojej funkcji");
+
+var b=prompt("Podaj współczynnik b w twojej funkcji");
+
+var c=prompt("Podaj współczynnik c w twojej funkcji");
+
+
+if(a==0)
+{
+  document.write("")
+  var x=( (-c) / b);
+  document.write("To nie jest funkcja kwadratowa! wynik "+x);
+}
+if(b==0 && c>0)
+{
+  document.write("Ta funkcja nie ma miejsc zerowych");
+}
+if(b==0 && c<0)
+{
+  var x=Math.sqrt(((-c)/a));
+  document.write("Wyniki tej funkcji: x1:"+x+" x2:"+(-x));
+}
+
+if(a>0 && b!=0 && c!=0)
+{
+  var d=((b*b)-(4*a*c));
+  var v=Math.sqrt(d);
+
+  if(d<0)
+  {
+    document.write("Ta funkcja nie ma miejsc zerowych");
+  }
+  else if(d>0)
+  {
+    var x=((-b-v)/(2*a));
+    var x1=((-b+v)/(2*a));
+    document.write("Wyniki tej funkcji: x1:"+x+" x2:"+x1);
+  }
+}
+</script>
+
+</head>
+
+<body>
+
+</body>
+</html>

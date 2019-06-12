@@ -1,0 +1,40 @@
+<html>
+<head></head>
+<body>
+<script language="JavaScript">
+
+var tab=new Array(3);
+
+document.write("Tablica przed posortowaniem rosnącym:"+"<br />")
+for(var i=0; i<tab.length; i++)
+{
+tab[i]=prompt("Podaj liczbę całkowitą");
+document.write(tab[i]+"<br />");
+}
+
+document.write("<hr />");
+document.write("Tablica posortowana rosnąco"+"<br />");
+for(var i=0; i<tab.length; i++)
+{
+  for(var j=0; j<tab.length; j++)
+  {
+    if(tab[i]<tab[j])
+    {
+      var x=tab[j];
+      tab[j]=tab[i];
+      tab[i]=x;
+    }
+
+  }
+}
+
+for(var i=0; i<tab.length; i++)
+{
+document.write(tab[i]+"<br />");
+}
+
+
+</script>
+
+</body>
+</html>
